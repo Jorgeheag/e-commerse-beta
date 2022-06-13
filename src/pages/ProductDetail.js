@@ -10,7 +10,7 @@ const ProductDetail = () => {
     const productsss = useSelector(state => state.products.data?.products)
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    console.log(productsss);
+    
     useEffect(() => {
         axios.get(`https://ecommerce-api-react.herokuapp.com/api/v1/products/${id}`)
             .then(res => {
@@ -26,8 +26,8 @@ const ProductDetail = () => {
 
         //  <img src={product?.productImgs[0]} alt="" />
 
-    }, [navigate])
-    console.log(product);
+    }, [navigate, dispatch])
+    
 
     return (
         <div>

@@ -1,0 +1,48 @@
+
+.home-img{width: 260px; height: 240px; object-fit: cover;}
+
+.list{
+  display: flex;
+  justify-content: center;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 10px;
+  height: fit-content;
+  border-radius: 10px;
+  transition: box-shadow .3s;
+}
+
+.card:hover{
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.contain{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.titlep{
+  color: black;
+  font-weight: bold;
+}
+
+.sug{
+  display: flex;
+  flex-wrap: wrap wrap;
+  margin: 20px;
+  
+}
+.sugp img{
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+}
+.sugp{width: 150px;}
+
+.imgsss{display: flex;}
+.imgsss img{width: 300px;}
